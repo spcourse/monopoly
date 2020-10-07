@@ -59,7 +59,7 @@ Note: the function `practice_with_dice()` is not needed in the rest of the assig
 
 We can now start our simulation by declaring a new function: `simulate_monopoly()`. We'll gradually expand this function until we can simulate a 'real' game of Monopoly. Let's start simple by having 1 player move one lap around the Monopoly game board en keep track of their exact position.
 
-Repeatedly throw two dice and keep track on what property the player landed. `Print` that information to the screen. Each lap starts with position 0, prison is located at position 10 and the most expensive property is located at the second to last field; 39.
+Repeatedly throw two dice and keep track on what property the player landed. `Print` that information to the screen. Each lap starts with position 0, prison is located at position 10 and the most expensive property is at the last field; 39.
 
     After throw 1: position 6
     After throw 2: position 9
