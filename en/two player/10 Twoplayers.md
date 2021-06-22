@@ -1,14 +1,16 @@
 ## Assignment 3: Realistic addition: two players
 
-In real life Monopoly is played by two players. The player that starts first has an advantage, since they will have a bigger chance of moving to a spot that has not been purchased yet. The first part of this assignment is evaluating what the advantage is of the starting player and subsequently study how to repair the disadvantage player two has.
+In real life Monopoly is played by (at least) two players. The player that starts first has an advantage, since they will have a bigger chance of moving to a spot that has not been purchased yet. The first part of this assignment is evaluating what the advantage is of the starting player and subsequently study how to repair the disadvantage player two has.
 
 ![](Balans.png){:.inline}{: style="width:35%"}
 
 > We're going to edit the code from assignment 1 and 2. To make sure a working copy of that code is stored, we'll make a new file. Create a file called `monopoly_realistic.py` and copy the code we've written up til now into the new file and continue with this new file.
 
-#### [part 3a] advantage of player 1
+#### Advantage of player 1
 
-First, add a second player to your simulation. Let both players start with 1500 euros of starting money and determine the difference in the number of properties both players own when all streets have been bought up. This difference will be different each game. That's why you should simulate 10000 games, so you can make an accurate estimation of the average difference. You'll see that player 1 does indeed have a small advantage over player 2.
+First, add a second player to your simulation. Let both players start with 1500 euros of starting money and determine the difference in the number of properties both players own when all streets have been bought up. Think of a method that involves as little duplicate code as possible.
+
+The difference between the two players will be different each game. That's why you should simulate 10000 games, so you can make an accurate estimation of the average difference. You'll see that player 1 does indeed have a small advantage over player 2.
 
 The goal is to figure out the difference by simulating a large amount of games:
 {: .language-python}
@@ -34,16 +36,16 @@ The goal is to figure out the difference by simulating a large amount of games:
 
     * At the start of the game for example their positions are: `position_p1 = 0` and `position_p2 = 0`, but the brave among you can also keep track of their positions in a list like this: `positions = [0, 0]`. You have the same set of options for keeping track of the amount of money each player has. It is standard to use multiple variables, but it is more concise to use a list.
 
-Always test your code for a single game and keep close watch whether your code behaves the way you expect it to. Only then should you increase the number of games. Again, use the same setup as you did in the function for the first assignment and now, aside from the number of games, also specify the starting money of both players: `simulate_monopoly_games(total_games, starting_money_p1, starting_money_p2)` en make sure you can answer the question.
+Always test your code for a single game and keep close watch whether your code behaves the way you expect it to. Only then should you increase the number of games. 
 
 Ultimately `print` the difference to the terminal:
 {: .language-python}
     Monopoly simulator: two players, 1500 euro starting money, 10000 games
     On average player 1 has X.XX more streets in their possession when all streets have been bought
 
-#### [part 3b] repairing the disadvantage of player 2
+#### Repairing the disadvantage of player 2
 
-The question remains if and how we can fix this 'unfair' situation. One of the 'buttons' you can turn for this game is the amount of starting money the players receive. If player 2 has more starting money than they can overcome their disadvantage. Determine the amount of extra starting money player 2 should receive so they have, on average, as many streets as player 1 by the end of each game of Monopoly.
+The question remains if and how we can fix this unfair situation. One of the variables you can change for this game is the amount of starting money each of the players receive. If player 2 has more starting money they can overcome their disadvantage. Determine the amount of extra starting money player 2 should receive so they have, on average, as many streets as player 1 by the end of each game of Monopoly.
 
 Declare a new function `equilibrium()` in which you repeatedly call the function `simulate_monopoly_games(total_games, starting_money_p1, starting_money_p2)` with different values for the starting money of player 2. Player 1's starting money is fixed at 1500 euros. Try this for an 'extra' amount of money for player 2 of 0, 50, 100, 150, 200 euros and each time print the average difference to the screen as follows:
 
