@@ -14,7 +14,7 @@ For a **single** game the code looks a bit like this:
 
 Here too, just like in assignment 1, we'll have to simulate a large number of games. Make sure the starting money of the player is supplied in the function call as input argument: `simulate_monopoly_games(total_games, starting_money)`. This function will pass that amount of `starting_money` to each individual simulation.
 
-Start out with 3000 euros of starting money and lower that amount by 500 each time: 2500, 2000, 1500, 1000, 500, and 0 euro. Simulate for each choice of starting money 25000 different games to accurately calculate the average number of throws required to collect all streets. Finally create a graph of the average amount of throws on the vertical axis and the amount of starting money on the horizontal axis.
+Start out with 3000 euros of starting money and lower that amount by 500 each time: 2500, 2000, 1500, 1000, 500, and 0 euro. Simulate for each choice of starting money 2500 different games to accurately calculate the average number of throws required to collect all streets. Finally create a graph of the average amount of throws on the vertical axis and the amount of starting money on the horizontal axis.
 
 In the official game of Monopoly each player is assigned 1500 euros at the start. `Print` for that specific amount of starting money the number of throws that are required to buy all streets and `print` that amount to the screen in the following way:
 
