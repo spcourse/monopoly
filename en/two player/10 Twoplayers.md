@@ -1,10 +1,10 @@
-## Assignment 3: Realistic addition: two players
+## Realistic addition: two players
 
 In real life Monopoly is played by (at least) two players. The player that starts first has an advantage, since they will have a bigger chance of moving to a spot that has not been purchased yet. The first part of this assignment is evaluating what the advantage is of the starting player and subsequently study how to repair the disadvantage player two has.
 
 ![](Balans.png){:.inline}{: style="width:35%"}
 
-> We're going to edit the code from assignment 1 and 2. To make sure a working copy of that code is stored, we'll make a new file. Create a file called `monopoly_realistic.py` and copy the code we've written up til now into the new file and continue with this new file.
+> We're going to edit the code from "Moving around" and "Starting money". To make sure a working copy of that code is stored, we'll make a new file. Create a file called `monopoly_realistic.py` and copy the code we've written up til now into the new file and continue with this new file.
 
 #### Advantage of player 1
 
@@ -36,7 +36,7 @@ The goal is to figure out the difference by simulating a large amount of games:
 
     * At the start of the game for example their positions are: `position_p1 = 0` and `position_p2 = 0`, but the brave among you can also keep track of their positions in a list like this: `positions = [0, 0]`. You have the same set of options for keeping track of the amount of money each player has. It is standard to use multiple variables, but it is more concise to use a list.
 
-Always test your code for a single game and keep close watch whether your code behaves the way you expect it to. Only then should you increase the number of games. 
+Always test your code for a single game and keep close watch whether your code behaves the way you expect it to. Only then should you increase the number of games.
 
 Ultimately `print` the difference to the terminal:
 {: .language-python}
@@ -69,3 +69,5 @@ After manually checking the output, test `monopoly_realistic`:
 ## Summary
 
 The simulation that we've implemented here is a simplified version of the often-times very complex models with which large financial institutions assess risks and determine strategies. At the same time these simulations are used by political parties to predict the effects of different measures given a variation of scenarios.
+
+> Before submission, make sure to remove code that you no longer use. This includes commented prints you are no longer going to use.

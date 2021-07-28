@@ -51,7 +51,7 @@ Each turn of the game starts with throwing two dice. That means two random numbe
       result = throw_two_dice()
       print(f"Total value of throwing two dice: {result}.")
 
-Note: the function `practice_with_dice()` is not needed in the rest of the assignment. You can either remove it from your code or leave there, it's up to you.
+> Note: the function `practice_with_dice()` is not needed in the rest of the assignment. You can either remove it from your code or leave there, it's up to you.
 
 ## Moving around an empty board
 
@@ -64,7 +64,7 @@ Repeatedly throw two dice and keep track on what property the player landed. `Pr
     After throw 3: position 17
     After throw 4: ...
 
-Note: make sure the position is always denoted as an integer between 0 and 39, even when you've lapped the board multiple times. You could use the modulo (`%`) to achieve this, like earlier in module 1.
+> Note: make sure the position is always denoted as an integer between 0 and 39, even when you've lapped the board multiple times. You could use the modulo (`%`) to achieve this, like earlier in module 1.
 
 ## Moving around the actual game board
 
@@ -77,7 +77,7 @@ Not every position on the board corresponds with a property (street, station or 
 
 If the value is equal to zero then the field is 'empty' (not for sale).
 
-During testing, you could `print` the following statement for each of the positions of the board :
+_During testing, you could `print`_ the following statement for each of the positions of the board:
 
     After throw 1: position  6 (street)
     After throw 2: position  9 (street)
@@ -106,16 +106,18 @@ Immediately afterwards the list would look like this:
 {: .language-python}
     possessions = [0, 0, 0, 1, 0, ....., 0, 0]
 
-If a field is not for sale or the street is already in your possession then we throw the dice again and just move on. During testing, make sure that each time you land on a field that can be bought, your program `print`s that fact to the screen and also how many properties you have in possession after buying that property.
+If a field is not for sale or the street is already in your possession then we throw the dice again and just move on.
+
+_During testing_, make sure that each time you land on a field that can be bought, your program `print`s that fact to the screen and also how many properties you have in possession after buying that property:
 
     After throw 1: position  3 (street)
                player 1 has 1 property in their possession. There are still 27 fields for sale.
 
-Since you know how many streets there are for sale in total, you also know when all available properties are in possession of the player. Stop throwing dice when that happens and instead `print` to the screen how many turns it took.
+Since you know how many streets there are for sale in total, you also know when all available properties are in possession of the player! Stop throwing dice when that happens and make sure your program counts how many throws it took to buy all properties.
 
 ## Report the result
 
-Now make sure that the function `simulate_monopoly()` `return`s the **number of throws** when it finishes simulating a game. You could also directly `print` it, but that is not the purpose of the function! Further on in the assignment we're going to be simulating a large number of Monopoly games and we don't want the program to `print` a message for each simulation. So use `return`.
+Now make sure that the function `simulate_monopoly()` `return`s the **number of throws** when it finishes simulating a game. You could also directly `print` it, but that is not the purpose of the function! Further on in the assignment we're going to be simulating a large number of Monopoly games and we don't want the program to `print` a message for each simulation, in which case it is necessary to use `return`.
 
 Your code should operate as follows:
 
@@ -145,15 +147,16 @@ Declare a function `simulate_monopoly_games(total_games)` that will simulate a l
     We simulated 10000 games
     It took an average of XXX throws before the player to collect all streets
 
-Tip: when you simulate a large number of games it is useful if the program reports what exactly is being executed at each moment in time. On the other hand, it is counter-productive if you have to scroll through line upon line of output. A way to resolve that issue is by, for instance, only `print` each 500 games of Monopoly the relevant information of that game.
+> When you simulate a large number of games it is useful if the program reports what exactly is being executed at each moment in time. On the other hand, it is counter-productive if you have to scroll through line upon line of output. A way to resolve that issue is by, for instance, only `print` each 500 games of Monopoly the relevant information of that game. You can also remove any prints of things that you have already tested extensively.
 
 ## And then: return the result
 
 Finally make sure the function `simulate_monopoly_games(total_games)` `return`s the average number of throws that were required to collect all streets.
 
-After manually checking the output, update `checkpy` and test Monopoly:
+After manually checking the output using your `print`s, **comment or remove your `print`s** and test Monopoly:
 
-    checkpy -u
     checkpy monopoly
 
 **You won't pass all tests, because the last test is for the next part of the assignment.**
+
+> Always make sure to remove code that you no longer use. This includes commented prints you are no longer going to use.

@@ -10,6 +10,6 @@ In this module we'll calculate a simple example: Monopoly with two players, in w
 
 Two things to be aware of before starting with this assignment:
 
-1. To figure out whether your code works, you'll have to `print` often. Very useful, because it allows you to verify the logic in each step of the program you implement and whether it works the way you envisioned. Once you're convinced a step in your program functions the way it's supposed to, you can remove the `print` statement. Which you should, because `print`ing is a computationally slow action and quickly becomes cluttering when done in abundance.
+1. To figure out whether your code works, you'll have to `print` often. Very useful, because it allows you to verify the logic in each step of the program you implement and whether it works the way you envisioned. **Once you're convinced a step in your program functions the way it's supposed to, you can remove the `print` statement.** Which you should, because `print`ing is a computationally slow action and quickly becomes cluttering when done in abundance.
 
 2. This module works toward a fairly complex simulation of Monopoly. To make sure you understand your own code completely it is important to start out straightforward and iteratively add new components or layers of complexity to your program. To retain a working copy of each part of the assignment we'll ask you to save each of the two subassignments as a separate file, since they are both an expansion of previous code.
