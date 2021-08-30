@@ -9,7 +9,7 @@ Create a program that simulates a great number of games of a simplified version 
 
 ## Background
 
-We're going to simulate a large number of games of Monopoly in which we let 1 player go around the board and buy all the properties. We play the so-called Trump Mode; the player has infinite money and there is no competition. The goal of this assignment to determine the average number of throws after which all streets have been bought.
+We're going to simulate a large number of games of Monopoly in which we let 1 player go around the board and buy all the properties. We play the so-called Trump Mode; the player has infinite money and there is no competition. The goal of this assignment is to determine the average number of throws after which all streets have been bought.
 
 ## Specification
 
@@ -32,7 +32,7 @@ Each turn of the game starts with throwing two dice. That means two random numbe
     import random
     dice = random.randint(1, 6)
 
-**Declare** a function called `practice_with_dice()` to test your dice throws. Let it simulate a thousand throws and for each throw let it use two dice. `Print` for each throw the total value of the dice to the terminal and clearly display to the user when a 'double' has been thrown (the numbers on the two dices are identical). Keep track of the number of 'doubles' and `print` that number to the screen at the end of the function.
+**Declare** a function called `practice_with_dice()` to test your dice throws. Let it simulate a thousand throws and for each throw let it use two dice. For each throw, `print` the total value of the dice to the terminal and clearly display to the user when a 'double' has been thrown (the numbers on the two dices are identical). Keep track of the number of 'doubles' and `print` that number to the screen at the end of the function.
 
 {: .language-python}
     throw 1: total value of 2 dice =  5
@@ -51,13 +51,13 @@ Each turn of the game starts with throwing two dice. That means two random numbe
       result = throw_two_dice()
       print(f"Total value of throwing two dice: {result}.")
 
-> Note: the function `practice_with_dice()` is not needed in the rest of the assignment. You can either remove it from your code or leave there, it's up to you.
+> Note: the function `practice_with_dice()` is not needed in the rest of the assignment. You can either remove it from your code or leave it there, it's up to you.
 
 ## Moving around an empty board
 
 We can now start our simulation by declaring a new function: `simulate_monopoly()`. We'll gradually expand this function until we can simulate a 'real' game of Monopoly. Let's start simple by having 1 player move one lap around the Monopoly game board en keep track of their exact position.
 
-Repeatedly throw two dice and keep track on what property the player landed. `Print` that information to the screen. Each lap starts with position 0, prison is located at position 10 and the most expensive property is located at the last field; 39.
+Repeatedly throw two dice and keep track of what property the player landed on. `Print` that information to the screen. Each lap starts with position 0, prison is located at position 10 and the most expensive property is located at the last field; 39.
 
     After throw 1: position 6
     After throw 2: position 9
@@ -100,7 +100,7 @@ Each time you land on a new position you can verify:
 * is the position up for sale: street, station, utility?
 * if so, is it still 'on the market'?
 
-If, for example, you reach position 3 after the first trow and buy Whitechapel Road (or Brink, in the Dutch version) then you can update your list of possessions.
+If, for example, you reach position 3 after the first trow and buy Whitechapel Road (or Brink, in the Dutch version), then you can update your list of possessions.
 Immediately afterwards the list would look like this:
 
 {: .language-python}
@@ -130,7 +130,7 @@ Your code should operate as follows:
 
 We can now use the function `simulate_monopoly()` to simulate a single game of Monopoly. If you do this a couple of times you'll see that the number of throws required to collect all streets varies greatly from game to game. This is because near the end of a game you need a lot of luck to land on the few open fields that are left. The goal of this assignment is to find out how many throws the player (on *average*) needs to bring all properties into their possession. To answer this question we'll need to simulate a large number of games.
 
-Declare a function `simulate_monopoly_games(total_games)` that will simulate a large number of games by repeatedly call the function `simulate_monopoly()`:
+Declare a function `simulate_monopoly_games(total_games)` that will simulate a large number of games by repeatedly calling the function `simulate_monopoly()`:
 
     for game in range(0, total_games):
         number_of_throws = simulate_monopoly()
@@ -145,13 +145,13 @@ Declare a function `simulate_monopoly_games(total_games)` that will simulate a l
 
     Monopoly simulator: 1 player, Trump mode
     We simulated 10000 games
-    It took an average of XXX throws before the player to collect all streets
+    It took an average of XXX throws for the player to collect all streets
 
-> When you simulate a large number of games it is useful if the program reports what exactly is being executed at each moment in time. On the other hand, it is counter-productive if you have to scroll through line upon line of output. A way to resolve that issue is by, for instance, only `print` each 500 games of Monopoly the relevant information of that game. You can also remove any prints of things that you have already tested extensively.
+> When you simulate a large number of games it is useful if the program reports what exactly is being executed at each moment in time. On the other hand, it is counter-productive if you have to scroll through line upon line of output. A way to resolve that issue is by, for instance, only `print`ing the relevant information of each 500th game of Monopoly. You can also remove any prints of things that you have already tested extensively.
 
 ## And then: return the result
 
-Finally make sure the function `simulate_monopoly_games(total_games)` `return`s the average number of throws that were required to collect all streets.
+Finally, make sure the function `simulate_monopoly_games(total_games)` `return`s the average number of throws that were required to collect all streets.
 
 After manually checking the output using your `print`s, **comment or remove your `print`s** and test Monopoly:
 
