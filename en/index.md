@@ -18,4 +18,4 @@ Two things to be aware of before starting with this assignment:
 
 By the way, you'll not be the first to simulate the Monopoly game. In the video below Matt Parker discusses his simulation of the game with Hannah Fry. It focusses on different aspects of the game, but it's very interesting anyway.
 
-![embed](https://www.youtube.com/watch?v=ubQXz5RBBtU)
+![embed](https://www.youtube.com/embed/ubQXz5RBBtU)
