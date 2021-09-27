@@ -157,6 +157,6 @@ After manually checking the output using your `print`s, **comment or remove your
 
     checkpy monopoly
 
-**You won't pass all tests, because the last test is for the next part of the assignment.**
+**You won't pass all tests, because the last test ("Monopoly works with 1500 euro starting_money") is for the next part of the assignment.**
 
 > Always make sure to remove code that you no longer use. This includes commented prints you are no longer going to use.
