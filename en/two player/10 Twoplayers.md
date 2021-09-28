@@ -1,7 +1,5 @@
 ## Realistic addition: two players
 
-![](Balans.png){:.inline}{: style="width:35%"}
-
 In real life, Monopoly is played by (at least) two players. The player that starts first has an advantage, since they will have a bigger chance of moving to a spot that has not been purchased yet. The first part of this assignment is evaluating what the advantage is of the starting player and subsequently study how to repair the disadvantage player two has.
 
 > We're going to edit the code from "Moving around" and "Starting money". To make sure a working copy of that code is stored, we'll make a new file. Create a file called `monopoly_realistic.py` and copy the code we've written up until now into the new file and continue with this new file.
@@ -44,6 +42,8 @@ Ultimately `print` the difference to the terminal:
     On average player 1 has X.XX more streets in their possession when all streets have been bought
 
 #### Repairing the disadvantage of player 2
+
+![](Balans.png){:.inline}{: style="width:35%"}
 
 The question remains if and how we can fix this unfair situation. One of the variables you can change for this game is the amount of starting money each of the players receive. If player 2 has more starting money they can overcome their disadvantage. Determine the amount of extra starting money player 2 should receive so they have, on average, as many streets as player 1 by the end of each game of Monopoly.
 
