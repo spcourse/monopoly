@@ -1,8 +1,8 @@
 ## Realistic addition: two players
 
-In real life, Monopoly is played by (at least) two players. The player that starts first has an advantage, since they will have a bigger chance of moving to a spot that has not been purchased yet. The first part of this assignment is evaluating what the advantage is of the starting player and subsequently study how to repair the disadvantage player two has.
-
 ![](Balans.png){:.inline}{: style="width:35%"}
+
+In real life, Monopoly is played by (at least) two players. The player that starts first has an advantage, since they will have a bigger chance of moving to a spot that has not been purchased yet. The first part of this assignment is evaluating what the advantage is of the starting player and subsequently study how to repair the disadvantage player two has.
 
 > We're going to edit the code from "Moving around" and "Starting money". To make sure a working copy of that code is stored, we'll make a new file. Create a file called `monopoly_realistic.py` and copy the code we've written up until now into the new file and continue with this new file.
 
