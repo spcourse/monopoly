@@ -19,7 +19,7 @@ Start out with 3000 euros of starting money and lower that amount by 500 each ti
 In the official game of Monopoly each player is assigned 1500 euros at the start. `Print` the number of throws that are required to buy all streets for that specific amount of starting money, and do it in the following way:
 
 {: .language-python}
-	Monopoly simulator: 1 player, 1500 euros starting money, 10000 games
+	Monopoly simulator: 1 player, 1500 euros starting money, 2500 games
     It took an average of XXX throws for the player to collect all streets
 
 Use the difference between the average number of throws with 1000 euros or 2000 euros of starting money to get an idea of the effect (number of throws the game is shorter/longer) of having 100 euros more or less starting money each time.
