@@ -36,7 +36,7 @@ The goal is to figure out the difference by simulating a large amount of games:
 
 Always test your code for a single game and keep close watch whether your code behaves the way you expect it to. Only then should you increase the number of games.
 
-Ultimately `print` the difference to the terminal:
+Ultimately, `print` the difference to the terminal:
 {: .language-python}
     Monopoly simulator: two players, 1500 euro starting money, 10000 games
     On average player 1 has X.XX more streets in their possession when all streets have been bought
@@ -56,7 +56,9 @@ Declare a new function `equilibrium()` in which you repeatedly call the function
 
 If you've ran a couple simulations, you'll have a small data-set with which you can reproduce the graph from earlier and you should be able to make a decent estimation of the amount of extra money player 2 requires in order to restore the equilibrium.
 
-There is of course a sum of money where the advantage switches towards player 2. Use that amount (and the amount before that) to make an estimation of the amount where the equilibrium is situated. Assume for this that the difference follows a linear course as function of the extra money player 2 receives. The answer has to be rounded to the nearest value of 50 euros.
+There is of course a sum of money where the advantage switches towards player 2. Use that amount (and the amount before that) to make an estimation of the amount where the equilibrium is situated. Assume for this that the difference follows a linear course as function of the extra money player 2 receives. _The answer has to be rounded to the nearest value of 50 euros._
+
+Make sure your program `print`s the output to the terminal in the following format:
 
 {: .language-python}
     Monopoly simulator: 2 players
@@ -66,8 +68,10 @@ After manually checking the output, test `monopoly_realistic`:
 
     checkpy monopoly_realistic
 
+*Note that the final check doesn't run a function but expects your program to print the answer.*
+
 ## Summary
 
 The simulation that we've implemented here is a simplified version of the often-times very complex models with which large financial institutions assess risks and determine strategies. At the same time, these simulations are used by political parties to predict the effects of different measures given a variation of scenarios.
 
-> Before submission, make sure to remove code that you no longer use. This includes commented prints you are no longer going to use.
+> Before submission, make sure to remove code that you no longer use. This includes commented prints you are no longer going to use or that the check doesn't need.
