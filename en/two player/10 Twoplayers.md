@@ -43,7 +43,7 @@ Ultimately, `print` the difference to the terminal:
 
 #### Repairing the disadvantage of player 2
 
-![](Balans.png){:.inline}{: style="width:35%"}
+![](Balance.png){:.inline}{: style="width:35%"}
 
 The question remains if and how we can fix this unfair situation. One of the variables you can change for this game is the amount of starting money each of the players receive. If player 2 has more starting money they can overcome their disadvantage. Determine the amount of extra starting money player 2 should receive so they have, on average, as many streets as player 1 by the end of each game of Monopoly.
 
@@ -54,7 +54,7 @@ Declare a new function `equilibrium()` in which you repeatedly call the function
     Starting money  [1500,1650]: player 1 on average X.XX more streets (player 2 150 euros extra)
     Starting money  [1500,1700]: player 1 on average X.XX more streets (player 2 200 euros extra)
 
-If you've ran a couple simulations, you'll have a small data-set with which you can reproduce the graph from earlier and you should be able to make a decent estimation of the amount of extra money player 2 requires in order to restore the equilibrium.
+If you've ran a couple simulations, you'll have a small data-set with which you can reproduce the graph above (the one with the balance point) and you should be able to make a decent estimation of the amount of extra money player 2 requires in order to restore the equilibrium.
 
 There is of course a sum of money where the advantage switches towards player 2. Use that amount (and the amount before that) to make an estimation of the amount where the equilibrium is situated. Assume for this that the difference follows a linear course as function of the extra money player 2 receives. _The answer has to be rounded to the nearest value of 50 euros._
 
