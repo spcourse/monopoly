@@ -23,6 +23,7 @@ We're going to simulate a large number of games of Monopoly in which we let 1 pl
 
     - The function should `return` the number of throws required before all streets were held by the player.
 
+* Use a `main()` function to test your code!
 
 ## Dice
 
@@ -153,7 +154,7 @@ Declare a function `simulate_monopoly_games(total_games)` that will simulate a l
 
 Finally, make sure the function `simulate_monopoly_games(total_games)` `return`s the average number of throws that were required to collect all streets.
 
-After manually checking the output using your `print`s, **comment or remove your `print`s** and test Monopoly:
+Before using `checkpy` make sure that all your code is within a `main()` function or the `if __name__ == "__main__":` statement! This makes sure that your code will not time out during the tests, and is a part of the very first check. After manually checking the output using your `print`s, **comment or remove your `print`s** and test Monopoly:
 
     checkpy monopoly
 

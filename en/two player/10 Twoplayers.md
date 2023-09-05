@@ -15,7 +15,6 @@ The goal is to figure out the difference by simulating a large amount of games:
     Monopoly simulator: two players, 1500 euro starting money, 10000 games
     On average player 1 has X.XX more streets in their possession when all streets have been bought
 
-
 **Strategy:**
 
   * Edit the *input* for the function `simulate_monopoly()`
