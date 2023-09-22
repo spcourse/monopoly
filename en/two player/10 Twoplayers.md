@@ -67,7 +67,7 @@ After manually checking the output, test `monopoly_realistic`:
 
     checkpy monopoly_realistic
 
-*Note that the final check doesn't run a function but expects your program to print the answer.*
+**Note that you can not fully rely `checkpy` for this assignment.** Not everything can be tested automatically. In this case `checkpy` only tests the function `simulate_monopoly_games()`. There is no check for `equilibrium()`. You will need to make sure yourself that the outcome of this function is correct.
 
 ## Summary
 
