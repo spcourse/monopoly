@@ -158,6 +158,6 @@ Before using `checkpy` make sure that all your code is within a `main()` functio
 
     checkpy monopoly
 
-**You won't pass all tests, because the last test ("Monopoly works with 1500 euro starting_money") is for the next part of the assignment.**
+**If you did this part correctly you will only pass the first three checkpy tests. The last two tests ("Monopoly works for Trump-mode" and "Monopoly works with 1500 euro starting_money") are for the next part of the assignment.**
 
 > Always make sure to remove code that you no longer use. This includes commented prints you are no longer going to use.
