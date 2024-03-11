@@ -14,7 +14,9 @@ For a **single** game the code looks like this:
 
 Here too, just like in "Moving around", we'll have to simulate a large number of games. Make sure the starting money of the player is supplied in the function call as input argument: `simulate_monopoly_games(total_games, starting_money)`. This function will pass that amount of `starting_money` to each individual simulation.
 
-Start out with 3000 euros of starting money and lower that amount by 500 each time: 2500, 2000, 1500, 1000, 500, and 0 euro. Simulate for each choice of starting money 2500 different games to accurately calculate the average number of throws required to collect all streets. Finally, create a graph of the average amount of throws on the vertical axis and the amount of starting money on the horizontal axis.
+Start out with 3000 euros of starting money and lower that amount by 500 each time: 2500, 2000, 1500, 1000, 500, and 0 euro. Simulate for each choice of starting money 2500 different games to accurately calculate the average number of throws required to collect all streets.
+
+For your own insight of what is happening (you don't have to hand this in), create a graph of the average amount of throws on the vertical axis and the amount of starting money on the horizontal axis. Make sure to not put the plot code inside of `simulate_monopoly()` function as this could give a timeout error with checkpy.
 
 In the official game of Monopoly each player is assigned 1500 euros at the start. `Print` the number of throws that are required to buy all streets for that specific amount of starting money, and do it in the following way:
 
@@ -29,3 +31,9 @@ Use the difference between the average number of throws with 1000 euros or 2000 
    1. You're allowed to manually change the amount of starting money each time.
 
    2. You can test your code by providing the player with a huge amount of starting money. With a million euros you effectively create the same situation as you did for Donald Trump mode in "Moving around".
+
+## checkpy
+
+You can continue using the same checkpy here as for the previous part:
+
+    checkpy monopoly
