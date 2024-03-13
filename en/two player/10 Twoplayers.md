@@ -55,7 +55,7 @@ Declare a new function `equilibrium()` in which you repeatedly call the function
 
 If you've ran a couple simulations, you'll have a small data-set that allows you to make a decent estimation of the amount of extra money player 2 requires in order to restore the equilibrium.
 
-For your own insight it can be helpful to make a plot (like the graph above with the balance point). You don't have to hand in the code for this plot.
+For your own insight it can be helpful to make a plot (like the graph above with the balance point). You don't have to hand this in.
 
 If you have a look at your plot you will see that there is a sum of money where the advantage switches towards player 2. Use that amount (and the amount before that) to make an estimation of the amount where the equilibrium is situated. Assume for this that the difference follows a linear course as function of the extra money player 2 receives. _The answer has to be rounded to the nearest value of 50 euros._
 
