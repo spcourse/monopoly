@@ -53,9 +53,11 @@ Declare a new function `equilibrium()` in which you repeatedly call the function
     Starting money  [1500,1650]: player 1 on average X.XX more streets (player 2 150 euros extra)
     Starting money  [1500,1700]: player 1 on average X.XX more streets (player 2 200 euros extra)
 
-If you've ran a couple simulations, you'll have a small data-set with which you can reproduce the graph above (the one with the balance point) and you should be able to make a decent estimation of the amount of extra money player 2 requires in order to restore the equilibrium.
+If you've ran a couple simulations, you'll have a small data-set that allows you to make a decent estimation of the amount of extra money player 2 requires in order to restore the equilibrium.
 
-There is of course a sum of money where the advantage switches towards player 2. Use that amount (and the amount before that) to make an estimation of the amount where the equilibrium is situated. Assume for this that the difference follows a linear course as function of the extra money player 2 receives. _The answer has to be rounded to the nearest value of 50 euros._
+For your own insight it can be helpful to make a plot (likt the graph above with the balance point). You don't have to hand in the code for this plot.
+
+If you have a look at your plot you will see that there is a sum of money where the advantage switches towards player 2. Use that amount (and the amount before that) to make an estimation of the amount where the equilibrium is situated. Assume for this that the difference follows a linear course as function of the extra money player 2 receives. _The answer has to be rounded to the nearest value of 50 euros._
 
 **Make sure your program `print`s the output to the terminal in the following format:**
 
