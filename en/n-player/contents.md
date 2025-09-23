@@ -14,10 +14,11 @@ Start by creating a new file called `monopoly-nplayer.py` and copy your existing
 
 * You should be able to call the function like this:
 
-  ```python
-  starting_money = [1500, 1600, 2000]  # money for [player1, player2, player3]
-  simulate_monopoly(starting_money)
-  ```
+    starting_money = [1500, 1600, 2000]  # money for [player1, player2, player3]
+    simulate_monopoly(starting_money)
+  
+
+* The function should return a tuple with the delta's with respect to player 1: (streets_player1 - streets_player2, streets_player1 - streets_player3, ..., streets_player1 - streets_playerN)
 
 * The function should work for a list of any length:
 
